@@ -23,10 +23,17 @@
     />
     <!-- Normalize end -->
 
+    <!-- Animation start -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- Animation end -->
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
-  <body>
+  <body data-page>
     <!-- Header section -->
     <header class="header">
       <div class="container header-container">
@@ -75,7 +82,7 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
+          <button class="hero-btn animate__animated animate__pulse animate__delay-2s" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -146,6 +153,9 @@
                 width="370"
                 height="294"
               />
+                <div class="occupation-overlay">
+                  <p class="occupation-text">Десктопні додатки</p>
+                </div>
             </li>
 
             <li class="occupation-item">
@@ -156,6 +166,9 @@
                 width="370"
                 height="294"
               />
+              <div class="occupation-overlay">
+                <p class="occupation-text">Мобільні додатки</p>
+              </div>
             </li>
 
             <li class="occupation-item">
@@ -166,6 +179,9 @@
                 width="370"
                 height="294"
               />
+              <div class="occupation-overlay">
+                <p class="occupation-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -629,7 +645,6 @@
             </button>
           </div>
         </div>
-    
     <script src="./js/modal.js"></script>   
   </body>
 </html>
